@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:orientation="vertical" >
+
+    <Switch
+        android:id="@+id/light1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="LED 1" />
+
+    <Switch
+        android:id="@+id/light5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/light1"
+        android:text="LED 5" />
+
+    <Switch
+        android:id="@+id/light3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/light5"
+        android:text="LED 3" />
+
+    <Switch
+        android:id="@+id/light2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/light3"
+        android:text="LED 2" />
+
+    <Switch
+        android:id="@+id/light4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/light2"
+        android:text="LED 4" />
+
+    <Switch
+        android:id="@+id/light6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/light4"
+        android:text="LED 6" />
+    
+    <com.bluetooth.activities.LogView
+        android:id="@+id/tvData"
+        style="@style/settingsRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/light6"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
